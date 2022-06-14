@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tr doi xung</title>
+</head>
+<body>
+
+</body>
+</html>
+<script !src="">
+
+  function isPalindrome(s){
+      let arr = s.split('')
+      // arr.from()
+      // console.log(arr)
+      let kq = false
+      for (let i=0;i<arr[length-1];i++){
+           if(arr[i] == arr[length-(i+1)]){
+              kq = true
+          }else {
+               kq = false
+           }
+      }
+      if (kq){
+          document.write("tu doi xung")
+      }
+      else {
+          document.write("tu khong doi xung12")
+      }
+      return
+  }
+  let a = prompt("Nhap tu kiem tra doi xung")
+  isPalindrome(a)
+
+</script>
