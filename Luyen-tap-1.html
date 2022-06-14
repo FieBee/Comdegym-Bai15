@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap 1</title>
+</head>
+<body>
+<!--<button onclick="tongHop()">batdau</button>-->
+</body>
+</html>
+<script !src="">
+    //         // b1
+    // function tongHop(){
+    //     let a = "Xin chao"
+    //     document.write(a)
+    //     return a
+    // }
+
+    //             // b2
+    // function tongHop(a){
+    //     a=prompt("Nhap a")
+    //     a++
+    //     alert("a++ = "+a)
+    //     return
+    // }
+
+
+                    // b3
+    // function tongHop(a,b){
+    //     a = +prompt("Nhap a")
+    //     b = +prompt("Nhap b")
+    //     if (a>b){
+    //         alert(a+" > "+b)
+    //     }else {
+    //         alert("a + b = "+(a+b))
+    //     }
+    // }
+
+
+    //                 // b4
+    // function addNumbers() {
+    //     firstNum = 4;
+    //     secondNum = 8;
+    //     result = firstNum + secondNum;
+    //     return result;
+    // }
+    // result = 0;
+    // // alert(result)
+    // result = addNumbers();
+    // // alert(result)
+
+
+    let star1 = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let star2 = ["Ursa","Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa","Major","Leo"];
+    let star = prompt("Nhap vao sao")
+    function check_star(star){
+        let index_star = 0
+        let result ="";
+        for (let i=0 ;i<star1.length;i++){
+            if (star == star1[i]){
+                index_star = i
+                for (let j=0;j<star2.length;j++){
+                    if (index_star == j){
+                        result = star2[j]
+                        return result
+                        // break
+
+                    }
+                    // else {
+                    //     result= "Khong tim thay chom sao"
+                    //     return result
+                    // }
+                }
+            }
+            //     else {
+            //     result = "khong tim thay sao"
+            //     return result
+            // }
+
+        }
+
+    }
+
+
+    document.write(check_star(star))
+</script>
